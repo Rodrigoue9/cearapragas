@@ -1,0 +1,21 @@
+.navbar-brand img{
+width: 100%;
+}
+@media screen and (max-width:2000px){
+    .navbar-brand img{
+        width: 70%;
+        }
+}
+@media screen and (max-width:991px){
+    .navbar-brand img{
+        width: 100%;
+        }
+
+}
+.text-secondary{
+    color: aliceblue!important;
+
+}
+.text-dark{
+    color: aliceblue!important;
+}
