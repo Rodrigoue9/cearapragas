@@ -329,7 +329,22 @@
                 <div class="col-lg-8">
                     <div class="bg-light text-center p-5">
                         <h1 class="mb-4">Entre em Contato</h1>
-                        <form name="contact" netlify>
+                        <form> 
+                            <form name="contact" netlify>
+                                <p>
+                                  <label>Name <input type="text" name="name" /></label>
+                                </p>
+                                <p>
+                                  <label>Email <input type="email" name="email" /></label>
+                                </p>
+                                <p>
+                                  <button type="submit">Send</button>
+                                </p>
+                              </form>
+
+
+                        </form>
+                        <form name="contato" netlify>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input name="nome" type="text" class="form-control border-0" placeholder="Seu Nome" style="height: 55px; " required>
@@ -337,7 +352,14 @@
                                 <div class="col-12 col-sm-6">
                                     <input name="E-mail" type="email" class="form-control border-0" placeholder="Seu E-mail" style="height: 55px;" required>
                                 </div>
-                            
+                                <div class="col-12 col-sm-6">
+                                    <select name="Selecao" class="form-select border-0" style="height: 55px; " required>
+                                        <option selected>Selecione o Serviço</option>
+                                        <option value="1">Dedetização de Residências</option>
+                                        <option value="2">Dedetização de Comércios</option>
+                                        <option value="3">Dedetização de Serviços Públicos</option>
+                                    </select>
+                                </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1" data-target-input="nearest">
                                         <input name="data" type="text"
