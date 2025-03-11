@@ -1,0 +1,315 @@
+/* Estilos do formulário de preços */
+.pricing-header {
+    color: hsl(233, 13%, 49%);
+    margin: 3.3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-toggle {
+    margin-top: 2rem;
+    color: hsl(234, 14%, 74%);
+    display: flex;
+    align-items: center;
+}
+
+.pricing-toggle-btn {
+    margin: 0 1rem;
+}
+
+.pricing-checkbox {
+    display: none;
+}
+
+.pricing-sub {
+    background: linear-gradient(
+        135deg,
+        rgba(49, 88, 127, 1) 0%,
+        rgba(23, 34, 77, 1) 100%
+    );
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.6rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+    padding: 0.3rem;
+}
+
+.pricing-circle {
+    background-color: #fff;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+}
+
+.pricing-checkbox:checked + .pricing-sub {
+    justify-content: flex-end;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #fff;
+    color: hsl(233, 13%, 49%);
+    border-radius: 0.8rem;
+}
+
+.pricing-cards .pricing-card.pricing-active {
+    background: linear-gradient(
+        135deg,
+        rgba(49, 88, 127, 1) 0%,
+        rgba(23, 34, 77, 1) 100%
+    );
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.pricing-ul {
+    margin: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pricing-ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.pricing-ul li.pricing-price {
+    font-size: 3rem;
+    color: hsl(232, 13%, 33%);
+    padding-bottom: 2rem;
+}
+
+.pricing-shadow {
+    box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.pricing-active .pricing-price {
+
+    color: #fff;
+}
+
+.pricing-btn {
+    margin-top: 1rem;
+    height: 2.6rem;
+    width: 13.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: linear-gradient(
+        135deg,
+        rgba(49, 88, 127, 1) 0%,
+        rgba(23, 34, 77, 1) 100%
+    );
+    color: #fff;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+}
+
+.pricing-active-btn {
+    background: #fff;
+    color: rgb(23, 34, 77);
+}
+
+.pricing-bottom-bar {
+    border-bottom: 2px solid hsla(240, 8%, 85%, 0.582);
+}
+
+.pricing-card.pricing-active .pricing-bottom-bar {
+    border-bottom: 2px solid hsla(240, 8%, 85%, 0.253);
+}
+
+.pricing-pack {
+    font-size: 1.1rem;
+}
+
+/* Responsividade */
+@media (max-width: 280px) {
+    .pricing-ul {
+        margin: 1rem;
+    }
+    .pricing-header h1 {
+        font-size: 1.2rem;
+    }
+    .pricing-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+    }
+    .pricing-cards {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing-card {
+        transform: scale(0.8);
+        margin-bottom: 1rem;
+    }
+    .pricing-cards .pricing-card.pricing-active {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+    .pricing-ul {
+        margin: 20px;
+    }
+    .pricing-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing-card {
+        margin-bottom: 1rem;
+    }
+    .pricing-cards .pricing-card.pricing-active {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+    .pricing-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing-card {
+        margin-bottom: 1rem;
+    }
+    .pricing-cards .pricing-card.pricing-active {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 414px) and (max-width: 768px) {
+    .pricing-card {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    .pricing-cards .pricing-card.pricing-active {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1046px) {
+    .pricing-cards {
+        display: flex;
+    }
+    .pricing-card {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    .pricing-cards .pricing-card.pricing-active {
+        transform: scale(1);
+    }
+}
+
+
+/* Style-Preços */
+
+
+body {
+    font-family: 'lato', sans-serif;
+  }
+  
+  .ceara-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .ceara-container h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .ceara-container h2 small {
+    font-size: 0.5em;
+  }
+  
+  .ceara-responsive-table {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ceara-responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .ceara-responsive-table .ceara-table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  
+  .ceara-responsive-table .ceara-table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ceara-responsive-table .ceara-col-1 {
+    flex-basis: 15%;
+  }
+  
+  .ceara-responsive-table .ceara-col-2 {
+    flex-basis: 30%;
+  }
+  
+  .ceara-responsive-table .ceara-col-3 {
+    flex-basis: 15%;
+  }
+  
+  .ceara-responsive-table .ceara-col-4 {
+    flex-basis: 40%;
+  }
+  
+  @media all and (max-width: 767px) {
+    .ceara-responsive-table .ceara-table-header {
+      display: none;
+    }
+  
+    .ceara-responsive-table li {
+      display: block;
+    }
+  
+    .ceara-responsive-table .ceara-col {
+      flex-basis: 100%;
+      display: flex;
+      padding: 10px 0;
+    }
+  
+    .ceara-responsive-table .ceara-col:before {
+      color: #6C7A89;
+      padding-right: 10px;
+      content: attr(data-label);
+      flex-basis: 50%;
+      text-align: right;
+    }
+  }
